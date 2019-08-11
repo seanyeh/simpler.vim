@@ -14,7 +14,10 @@ rundown on the default behavior.
 
 #### Default
 
-- The default register is `*`.
+- The default register is:
+    - `"` if `set clipboard=` (default)
+    - `*` if `set clipboard=unnamed`
+    - `+` if `set clipboard=unnamedplus`
 - Registers named `1-9` act like a stack, where `1` is on top.
 - Yank (`y`, `Y`) and Delete (`c`, `C`, `d`, `D`, `s`, `S`, `x`, `X`) commands
   save to both `*` and `"` registers unless specified otherwise.
